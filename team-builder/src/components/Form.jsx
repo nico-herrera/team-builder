@@ -43,6 +43,7 @@ const Form = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     addNewMember(newMembersFormState);
+    setNewMembersFormState({ name: "", email: "", role: "" });
   };
 
   return (

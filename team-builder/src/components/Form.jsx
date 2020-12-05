@@ -85,7 +85,7 @@ const Form = () => {
         <div>
           {teamMemberListState.map((item) => {
             return (
-              <div>
+              <div key={item.name}>
                 <h2>{item.name}</h2>
                 <p>{item.email}</p>
                 <p>{item.role}</p>
